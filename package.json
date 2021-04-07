@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start:watch": "nodemon ./bin/www --ignore public/",
-    "start:dev": "node ./bin/www",
+    "start:dev": "pm2 start ./bin/www",
     "debug": "node debug ./bin/www",
     "start": "NODE_ENV=production node ./bin/www",
     "start:production": "NODE_ENV=production node ./bin/www",
